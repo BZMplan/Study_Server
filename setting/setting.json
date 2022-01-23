@@ -1,4 +1,5 @@
 {
     "port" :  "47796",
-    "ip" : "localhost"
+    "ip" : "localhost",
+    "save_location" : "save/msg.txt"
 }

@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.InetAddress;
 import java.net.Socket;
 
 public class clientInfo {
@@ -9,7 +10,9 @@ public class clientInfo {
             int len = 0;
             byte[] buf = new byte[1024];
             while ((len=in.read(buf))!=-1){
-            System.out.println("接收到的信息是 "+new String(buf,0,len));
+                String msg = new String(buf,0,len);
+                new saveMsg(msg);
+                System.out.println("接收到的信息是 "+msg);
             }
             in.close();
         } catch (Exception e) {
