@@ -9,7 +9,7 @@ import java.net.Socket;
 public class serverStart{
     public serverStart() throws IOException{
         //获取json文件中的数据
-        File file=new File("src/setting.json");
+        File file=new File("setting/setting.json");
         String content= FileUtils.readFileToString(file,"UTF-8");
         JSONObject jsonFile=new JSONObject(content);
         //定义ip与端口
