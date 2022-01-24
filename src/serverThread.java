@@ -7,13 +7,13 @@ import java.io.PrintWriter;
 import java.net.Socket;
 
 public class serverThread extends Thread{
-	
 	private Socket socket = null;
 	
 	public void ServerThread(Socket socket) {
 		this.socket = socket;
 	}
- 
+	
+
 	@Override
 	public void run() {
 		InputStream is=null;

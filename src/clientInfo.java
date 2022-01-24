@@ -9,7 +9,7 @@ public class clientInfo {
             byte[] buf = new byte[1024];
             while ((len=in.read(buf))!=-1){
                 String msg = new String(buf,0,len);
-                new saveMsg(msg);
+                new saveData(msg);
                 System.out.println("接收到的信息是 "+msg);
             }
             in.close();
